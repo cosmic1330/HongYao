@@ -1,0 +1,40 @@
+.area6 {
+  margin-bottom: 60px;
+  background-color: #fff;
+  h3 {
+    width: 90%;
+    margin: auto;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    margin-bottom: 35px;
+  }
+  p {
+    width: 90%;
+    margin: auto;
+    line-height: 2;
+    font-size: 1.2rem;
+  }
+  iframe {
+    display: flex;
+    margin: auto;
+    border-radius: 5px;
+    width: 95%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .area6 {
+    padding-bottom: 60px;
+    float: right;
+    width: 95%;
+    border-radius: 0 0 0px 5px;
+    p{
+        margin-bottom: 30px;
+    }
+    iframe {
+        display: flex;
+        margin: auto;
+        border-radius: 5px;
+        width: 90%;
+      }
+  }
+}

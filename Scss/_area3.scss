@@ -1,0 +1,41 @@
+.area3 {
+  padding-bottom: 60px;
+  background-color: #fff;
+  .item {
+    text-align: center;
+    h3 {
+      font-size: 1.9rem;
+      line-height: 1.5;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    img {
+      width: 90%;
+      border-radius: 5px;
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .area3 {
+    float: right;
+    width: 95%;
+    .item {
+        position: relative;
+        h3 {
+            display: none;
+        }
+        &::before{
+            content:"職人精神 / 專業態度！";
+            display: block;
+            color:#fff;
+            background-color: #566B57;
+            position: absolute;
+            padding:20px;
+            bottom:-30px;
+            right: 0;
+            font-size: 2rem;
+            border-radius: 5px 0 0 5px;
+        }
+    }
+  }
+}

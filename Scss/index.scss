@@ -1,0 +1,33 @@
+@import "reset";
+@import "container";
+@import "header";
+@import "area1";
+@import "area2";
+@import "area3";
+@import "area4";
+@import "area5";
+@import "area6";
+@import "loading";
+
+
+
+html,
+body {
+  color: #333333;
+  font-size: 15px;
+  font-weight: 500;
+  word-break: break-all;
+  letter-spacing: 1px;
+  font-family: "Roboto", sans-serif;
+  background: url(../images/bk.png)
+    no-repeat;
+  background-attachment: fixed;
+  background-size: auto 75vh;
+  background-position: center 80px;
+}
+@media screen and (min-width: 992px) {
+  html,
+  body {
+    background-size: 100% auto;
+  }
+}
