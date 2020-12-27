@@ -625,27 +625,8 @@ table {
   margin-bottom: 0px;
 }
 
-.area5 .items .item img {
-  width: 50%;
-  border-radius: 50%;
-  margin-bottom: 30px;
-}
-
-.area5 .items .item .content {
-  width: 90%;
-  text-align: left;
-}
-
-.area5 .items .item .content h4 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.area5 .items .item .content p {
-  line-height: 1.5;
-  font-size: 0.8rem;
-  font-weight: 500;
+.area5 .items .item iframe {
+  width: 95%;
 }
 
 @media screen and (min-width: 992px) {
@@ -691,15 +672,6 @@ table {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  .area5 .items .item img {
-    width: 90%;
-  }
-  .area5 .items .item .content {
-    margin-left: 20px;
-  }
-  .area5 .items .item .content p {
-    width: 90%;
   }
 }
 
