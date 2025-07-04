@@ -79,7 +79,7 @@ import "../styles/index.scss";
                 <li><a href="#contact">聯絡我們</a></li>
                 <li class="social-link-mobile"><a href="https://www.facebook.com/hy1277/?ref=page_internal" aria-label="前往弘耀的 Facebook 粉絲專頁" rel="noopener noreferrer"><img src="./images/Fb.png" alt="Facebook Logo"></a></li>
             </ul>
-            <a href="https://www.facebook.com/hy1277/?ref=page_internal" class="social-link-desktop" aria-label="前往弘耀的 Facebook 粉絲專頁">
+            <a href="https://www.facebook.com/hy1277/?ref=page_internal" class="social-link-desktop" aria-label="前往弘耀的 Facebook 粉絲專頁" rel="noopener noreferrer">
                 <a href="https://www.facebook.com/hy1277/?ref=page_internal" class="social-link-desktop" aria-label="前往弘耀的 Facebook 粉絲專頁" rel="noopener noreferrer"> <img src="./images/fb.svg" alt="Facebook Logo"> </a>
             </a>
             <button class="hamburger" id="hamburger-button" aria-label="開啟選單" aria-controls="navbarNav">
@@ -232,8 +232,10 @@ import "../styles/index.scss";
                 </div>
                 <div class="contact-form">
                     <form action="#" method="post">
-                        <input type="text" name="name" placeholder="您的姓名" required="" aria-label="您的姓名">
-                        <input type="tel" name="phone" placeholder="聯絡電話" required="" aria-label="聯絡電話">
+                        <label for="name">您的姓名</label>
+                        <input type="text" id="name" name="name" placeholder="您的姓名" required="">
+                        <label for="phone">聯絡電話</label>
+                        <input type="tel" id="phone" name="phone" placeholder="聯絡電話" required="">
                         <textarea name="message" placeholder="請描述您的車況或問題" rows="4"></textarea>
                         <button type="submit" class="btn">送出表單</button>
                     </form>
