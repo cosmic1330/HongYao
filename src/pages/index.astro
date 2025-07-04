@@ -265,6 +265,23 @@ document.addEventListener('DOMContentLoaded', function () {
         navbarNav.classList.toggle('active');
         navbar.classList.toggle('is-active');
     });
+
+    // Scroll Animations
+    const animatedElements = document.querySelectorAll('.area1 .item, .area2 .item, .area4 .case-item, .area5 .items, .faq-section .faq-item, .contact-section .contact-container');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    animatedElements.forEach(element => {
+        observer.observe(element);
+    });
 });
     </script>
 </body>

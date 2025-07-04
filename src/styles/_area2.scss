@@ -8,6 +8,12 @@
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+
+    &.is-visible {
+      opacity: 1;
+    }
 
     .logo {
       margin-bottom: 2rem;
