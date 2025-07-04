@@ -1,33 +1,37 @@
-@import "reset";
-@import "container";
-@import "header";
-@import "area1";
-@import "area2";
-@import "area3";
-@import "area4";
-@import "area5";
-@import "area6";
-@import "loading";
+@use 'variables' as *;
 
-
+@use "reset";
+@use "container";
+@use "header";
+@use "area1";
+@use "area2";
+@use "area3";
+@use "area4";
+@use "area5";
+@use "area6";
+@use "faq";
+@use "contact";
+@use "footer";
+@use "loading";
 
 html,
 body {
-  color: #333333;
-  font-size: 15px;
-  font-weight: 500;
-  word-break: break-all;
-  letter-spacing: 1px;
-  font-family: "Roboto", sans-serif;
-  background: url(../images/bk.png)
-    no-repeat;
-  background-attachment: fixed;
-  background-size: auto 75vh;
-  background-position: center 80px;
+  color: $text-color;
+  font-size: 16px; // Base font size
+  font-weight: 400;
+  line-height: 1.6;
+  word-break: break-word;
+  letter-spacing: 0.5px;
+  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+  background-color: $secondary-color; // Use a light gray for the background
 }
-@media screen and (min-width: 992px) {
-  html,
-  body {
-    background-size: 100% auto;
-  }
+
+.wrap {
+  position: relative;
+  margin: auto;
+  max-width: 1200px;
+  overflow: hidden;
+  background-color: $background-color; // Add a background color to the main content area
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05); // Add a subtle shadow for depth
 }
+

@@ -1,40 +1,44 @@
+@use 'variables' as *;
+
 .area6 {
-  margin-bottom: 60px;
-  background-color: #fff;
+  padding: 4rem 2rem;
+  background-color: $heading-color;
+  color: #fff;
+  text-align: center;
+
   h3 {
-    width: 90%;
-    margin: auto;
-    letter-spacing: 2px;
     font-size: 2rem;
-    margin-bottom: 35px;
+    font-weight: 600;
+    margin-bottom: 2rem;
   }
+
   p {
-    width: 90%;
-    margin: auto;
     line-height: 2;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      border-bottom: 1px dotted #fff;
+
+      &:hover {
+        border-bottom-style: solid;
+      }
+    }
   }
+
   iframe {
-    display: flex;
-    margin: auto;
-    border-radius: 5px;
-    width: 95%;
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border: none;
+    border-radius: 8px;
   }
 }
+
 @media screen and (min-width: 992px) {
   .area6 {
-    padding-bottom: 60px;
-    float: right;
-    width: 95%;
-    border-radius: 0 0 0px 5px;
-    p{
-        margin-bottom: 30px;
-    }
-    iframe {
-        display: flex;
-        margin: auto;
-        border-radius: 5px;
-        width: 90%;
-      }
+    padding: 6rem 2rem;
   }
 }

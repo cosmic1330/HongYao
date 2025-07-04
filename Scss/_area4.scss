@@ -1,94 +1,98 @@
+@use 'variables' as *;
+@use 'sass:color';
+
 .area4 {
-  padding-bottom: 30px;
-  background-color: #ccc;
-  h4 {
-    margin: auto;
-    text-align: center;
-    width: 40px;
-    font-size: 2rem;
-    padding: 40px 5px 10px;
-    border-bottom: 2px solid #000;
-    margin-bottom: 30px;
+  padding: 4rem 2rem;
+  background-color: $background-color;
+
+  .col-12 {
+    margin-bottom: 4rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
+
+  h4 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $primary-color;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid $border-color;
+    display: inline-block;
+  }
+
   .title {
     display: flex;
     align-items: center;
-    width: 90%;
-    margin:0 auto 20px;
-    img{
-      width: 50px;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+    img {
+      width: 40px;
+      margin-right: 1rem;
     }
+
     span {
-      
-      display: block;
-      margin-left:30px;
       font-weight: 600;
-      font-size: 1.2rem;
+      font-size: 1.5rem;
+      color: $heading-color;
     }
   }
+
   .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+
     img {
-      width: 90%;
-      border-radius: 5px;
+      width: 100%;
+      max-width: 400px;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     }
+
     p {
-      text-align: left;
-      margin: auto;
-      width: 90%;
-      line-height: 2;
+      line-height: 1.8;
+      max-width: 600px;
+      margin-bottom: 2rem;
     }
+
     a {
       cursor: pointer;
-      transition: 0.5s;
+      transition: all 0.3s ease;
       display: inline-block;
-      padding: 10px 20px;
-      margin-top: 10px;
-      position: relative;
-      background-color: #efefef;
-      color:#333;
+      padding: 0.8rem 2rem;
+      background-color: $primary-color;
+      color: #fff;
       text-decoration: none;
+      border-radius: 50px; // Pill-shaped button
+      font-weight: 600;
+
       &:hover {
-        font-size: 1.08rem;
+        background-color: color.adjust($primary-color, $lightness: -10%);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
       }
     }
   }
 }
+
 @media screen and (min-width: 992px) {
   .area4 {
-    padding-bottom: 60px;
-    background-color: #fff;
-    float: right;
-    width: 95%;
-    h4 {
-      font-size: 3rem;
-      width: 60px;
-    }
-    .title {
-      margin: auto;
-      width: 80%;
-      flex-direction: row;
-      align-items: center;
-      margin-bottom: 30px;
-      span {
-        margin: 0;
-        margin-left: 30px;
-        font-size: 1.5rem;
-      }
-    }
+    padding: 6rem 2rem;
+
     .content {
-      margin: auto;
-      width: 80%;
-      display: flex;
-      align-items: center;
+      flex-direction: row;
+      text-align: left;
+
       img {
-        width: 100%;
-      }
-      p {
-        text-align: left;
-        margin: auto;
-        width: 90%;
-        line-height: 2;
+        margin-right: 2rem;
+        margin-bottom: 0;
       }
     }
   }

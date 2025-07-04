@@ -1,49 +1,63 @@
+@use 'variables' as *;
+
 .area2 {
-  background-color: #fff;
-  padding-top: 25%;
-  padding-bottom: 60px;
+  background-color: $background-color;
+  padding: 4rem 2rem;
+
   .item {
-    padding: 25px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+
     .logo {
-      text-align: right;
-      margin-bottom: 60px;
+      margin-bottom: 2rem;
       img {
-        width: 224px;
+        width: 180px;
       }
     }
+
     .title {
-      color: #6ba381;
-      letter-spacing: 2px;
-      font-size: 3rem;
-      margin-bottom: 60px;
-      font-weight: 500;
-    }
-    p {
-      font-size: 1.2rem;
-      line-height: 2;
+      color: $primary-color;
+      letter-spacing: 1px;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
       font-weight: 600;
     }
-  }
-}
-@media screen and (min-width: 768px) {
-}
-@media screen and (min-width: 992px) {
-  .area2 {
-    float: right;
-    width: 95%;
-    padding-top: 100px;
-    border-radius: 5px 0 0 0;
-    .item {
-      .logo {
-        padding: 0 100px;
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: $text-color;
+
+      a {
+        color: $primary-color;
+        text-decoration: none;
+        font-weight: 600;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
-    .title,
-    p {
-      width: 60%;
-      margin: auto;
-    }
   }
 }
-@media screen and (min-width: 1200px) {
+
+@media screen and (min-width: 992px) {
+  .area2 {
+    padding: 6rem 2rem;
+
+    .item {
+      .logo {
+        margin-bottom: 3rem;
+      }
+
+      .title {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
 }

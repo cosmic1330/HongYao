@@ -1,41 +1,55 @@
+@use 'variables' as *;
+
 .area3 {
-  padding-bottom: 60px;
-  background-color: #fff;
+  padding: 4rem 2rem;
+  background-color: $secondary-color;
+
   .item {
     text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+
     h3 {
-      font-size: 1.9rem;
+      font-size: 2rem;
       line-height: 1.5;
       font-weight: 600;
-      margin-bottom: 20px;
+      margin-bottom: 2rem;
+      color: $heading-color;
     }
+
     img {
-      width: 90%;
-      border-radius: 5px;
+      width: 100%;
+      border-radius: 8px; // Add a subtle border-radius
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     }
   }
 }
+
 @media screen and (min-width: 992px) {
   .area3 {
-    float: right;
-    width: 95%;
+    padding: 6rem 2rem;
+
     .item {
-        position: relative;
-        h3 {
-            display: none;
-        }
-        &::before{
-            content:"職人精神 / 專業態度！";
-            display: block;
-            color:#fff;
-            background-color: #566B57;
-            position: absolute;
-            padding:20px;
-            bottom:-30px;
-            right: 0;
-            font-size: 2rem;
-            border-radius: 5px 0 0 5px;
-        }
+      position: relative;
+
+      h3 {
+        display: none; // Hide the h3 on larger screens, as the text is in the ::before element
+      }
+
+      &::before {
+        content: "職人精神 / 專業態度！";
+        display: block;
+        color: #fff;
+        background-color: $primary-color;
+        position: absolute;
+        padding: 1rem 2rem;
+        bottom: -2rem;
+        right: -2rem;
+        font-size: 1.8rem;
+        border-radius: 8px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
     }
   }
 }

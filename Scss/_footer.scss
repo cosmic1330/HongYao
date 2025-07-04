@@ -1,0 +1,31 @@
+@use 'variables' as *;
+
+.footer {
+  padding: 4rem 2rem;
+  background-color: $heading-color;
+  color: #fff;
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+
+    .footer-map {
+      margin-bottom: 2rem;
+
+      iframe {
+        width: 100%;
+        height: 300px;
+        border: none;
+        border-radius: 8px;
+      }
+    }
+
+    .footer-info {
+      p {
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+  }
+}
